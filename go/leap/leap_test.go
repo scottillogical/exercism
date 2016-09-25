@@ -12,7 +12,7 @@ const targetTestVersion = 2
 func TestLeapYears(t *testing.T) {
 	if testVersion != targetTestVersion {
 		t.Fatalf("Found testVersion = %v, want %v", testVersion, targetTestVersion)
-	e
+	}
 	for _, test := range testCases {
 		observed := IsLeapYear(test.year)
 		if observed != test.expected {
